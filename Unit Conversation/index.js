@@ -10,7 +10,6 @@ const meter = 3.281;
 const liter = 0.264;
 const kilogram = 2.204;
 
-//Click metodu ekle
 btnEl.addEventListener("click", function () {
   let value = Number(inputEl.value);
   let txt = ``;
