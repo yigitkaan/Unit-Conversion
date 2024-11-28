@@ -17,17 +17,17 @@ btnEl.addEventListener("click", function () {
 
   for (let i = 0; i < resultsArr.length; i++) {
     if (i === 0) {
-      txt = `${value} meters = ${value * meter} feet | ${value} feet = ${
-        value / meter
-      } meters`;
+      txt = `${value} meters = ${(value * meter).toFixed(
+        2
+      )} feet | ${value} feet = ${(value / meter).toFixed(2)} meters`;
     } else if (i === 1) {
-      txt = `${value} liters = ${value * liter} gallons | ${value} gallons = ${
-        value / liter
-      } liters`;
+      txt = `${value} liters = ${(value * liter).toFixed(
+        2
+      )} gallons | ${value} gallons = ${(value / liter).toFixed(2)} liters`;
     } else {
-      txt = `${value} kilos = ${value * kilogram} pounds | ${value} pounds = ${
-        value / kilogram
-      } kilos`;
+      txt = `${value} kilos = ${(value * kilogram).toFixed(
+        2
+      )} pounds | ${value} pounds = ${(value / kilogram).toFixed(2)} kilos`;
     }
 
     resultsArr[i].textContent = txt;
